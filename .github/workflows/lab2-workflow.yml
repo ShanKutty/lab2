@@ -5,12 +5,12 @@ on:
     inputs:
       run_job:
         description: 'Run Specific Job'
-        required: false
         type: boolean
+        required: false
       custom_message:
         description: 'Enter a custom message'
-        required: true
         type: string
+        required: true
         
 jobs:
   job1:
@@ -22,6 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Printing Custom Message
-        run: echo echo ${{ inputs.custom_message }}
+        run: echo ${{ inputs.custom_message }}
   
+
 

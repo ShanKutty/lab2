@@ -26,8 +26,9 @@ jobs:
       - name: Printing run-job boolean value
         if: ${{ inputs.run-job == true }}
         run: echo ${{ inputs.run-job }}
-      - name: Print run ID
-        run: echo "The run ID is $GITHUB_RUN_ID"
+      #- name: Print run ID
+      #  run: echo "The run ID is $GITHUB_RUN_ID"
+
 
 
 
